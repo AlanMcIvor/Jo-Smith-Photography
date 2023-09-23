@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montez&display=swap');
+
+:root{
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    --bg-colour: #ccf5ff;
+    --bg-primary: #fe5934;
+    --bg-accent: #ef014c;
+    --ff-color: #e7e7e7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Inter, sans-serif;
+    background-image: url("../images/landscape16.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--ff-color);
+}
+
+/* header */
+
+header{
+    min-width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5em;
+    font-weight: var(--fw-medium);
+}
+
+.logo{
+    font-family: 'Montez', cursive;
+    font-weight: var(--fw-regular);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 650px;
+    justify-content: space-around;
+}
+
+.nav_link{
+    list-style: none;
+}
+
+.nav_link a{
+    display: block;
+    text-decoration: none;
+    color: var(--ff-color);
+    transition: 300ms;
+}
+
+.nav_link a:hover{
+    transform: translateY(1px);
+}
+
+.social_links{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-around;
+
+}
+
+.social_link{
+    color: var(--ff-color);
+}
+
+/* home main */
+
+.home_main{
+    height: calc(100vh - 67px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main_container{
+    display: flex;
+    margin-top: 16rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+.title{
+    font-size: 68px;
+    font-weight: var(--fw-bold);
+    margin-bottom: 0.5rem;
+}
+
+.sub_title{
+    font-size: 1.5em;
+    font-weight: var(--fw-medium);
+    margin-bottom: 0.5rem;
+}
+
+.intro{
+    font-size: 1em;
+    font-weight: var(--fw-regular);
+}
+
+.btn_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+.btn{
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--ff-color);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.main_btn{
+    background-color: var(--bg-primary);
+    border-radius: 5px;
+}
+
+.secondary_btn{
+    border: 1px solid var(--bg-primary);
+    border-radius: 5px;
+}
+
+.active{
+    border-bottom: 1px solid var(--bg-primary);
+}
+
+
+
