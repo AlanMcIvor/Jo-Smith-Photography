@@ -1,109 +1,199 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700;6..12,900&family=Oregano&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700;6..12,900&family=Oregano&display=swap');
 
-:root{
-    --fw-regular: 400;
-    --fw-medium: 500;
-    --fw-bold: 700;
-    --fw-black: 900;
+    :root{
+        --fw-regular: 400;
+        --fw-medium: 500;
+        --fw-bold: 700;
+        --fw-black: 900;
 
-    --primary: #fff;
-    --bg-accent: #cc3366;
-    --ff-color: #2b2b2b;
-}
+        --primary: #fff;
+        --bg-accent: #326a8b;
+        --ff-color: #2b2b2b;
+    }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-ul{
-    list-style: none;
-}
+    ul{
+        list-style: none;
+    }
 
-a{
-    text-decoration: none;
-    color: var(--primary)
-}
+    a{
+        text-decoration: none;
+        color: var(--primary)
+    }
 
-body{
-    font-family: 'Nunito Sans', sans-serif;
-    height: 100dvh;
-    height: 100vh;
-}
+    body{
+        font-family: 'Nunito Sans', sans-serif;
+        height: 100dvh;
+        height: 100vh;
 
-
-
-/* header */
-
-header{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    padding: 1.3rem;    
-    color: var(--primary)
-}
-
-.logo{
-    font-family: 'Oregano', cursive;
-}
-.nav_container, .social_container{
-    display: flex;
-}
-
-.nav_list, .social_list{
-    margin: 0 10px;
-    font-size: 1em;
-    font-weight: var(--fw-black);
-    letter-spacing: 0.8px;
-}
-
-.social_icons{
-    font-size: 25px;
-}
+    }
 
 
 
+    /* header */
+
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+        padding: 1.3rem;    
+        color: var(--primary)
+    }
+
+    .logo{
+        font-family: 'Oregano', cursive;
+        font-size: 1.2em;
+    }
+    .nav_container, .social_container{
+        display: flex;
+    }
+
+    .nav_list{
+        padding:0  1.5rem;
+        font-size: 1em;
+        font-weight: var(--fw-black);
+        letter-spacing: 0.8px;
+        transition: 300ms;
+        text-transform: uppercase;
+    }
+/* 
+    .social_icon{
+        display: block;
+        padding: 5px;
+    } */
 
 
 
-/* home main */
+    /* home main */
 
-.home_body{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('/images/landscape1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    
-}
+    .home_body{
+        background-color: var(--ff-color);
+        height: 100vh;
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/landscape2.jpg");
+        overflow-Y: hidden;
+        
+    }
 
-.home_main{
-    height: calc(100vh - 20%);
-    color: var(--primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-}
+    .home_main{
+        height: calc(100vh - 20%);
+        color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-.aside_txt{
-    max-width: 450px;
-    font-size: 1.2em;
-    font-weight: var(--fw-regular);
-}
+    }
 
-.title{
-    font-size: 4.125rem;
-    line-height: 1.2;
-    font-weight: var(--fw-bold);
-}
+    .aside_txt{
+        max-width: 450px;
+        font-size: 1.2em;
+        font-weight: var(--fw-regular);
+    }
 
-.home_article span{
-    display: block;
-}
+    .title{
+        font-size: 4.125rem;
+        line-height: 1.2;
+        font-weight: var(--fw-bold);
+        position: relative;
+    }
 
+    .title::before{
+        content: " ";
+        display: block;
+        width: 65px;
+        height: 2px;
+        background-color: var(--bg-accent);
+        position: absolute;
+        top: 0;
+        left: -30px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .title::after{
+        content: " ";
+        display: block;
+        width: 65px;
+        height: 2px;
+        background-color: var(--bg-accent);
+        position: absolute;
+        top: 32px;
+        left: -62px;
+        rotate: 90deg;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+
+    .btn_container::before{
+        content: " ";
+        display: block;
+        width: 65px;
+        height: 2px;
+        background-color: var(--bg-accent);
+        position: absolute;
+        bottom: 60px;
+        right: -30px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .btn_container::after{
+        content: " ";
+        display: block;
+        width: 65px;
+        height: 2px;
+        background-color: var(--bg-accent);
+        position: absolute;
+        top: -40px;
+        right: -62px;
+        rotate: 90deg;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .btn_container{
+        position: relative;
+        margin-top: 1rem;
+    }
+
+    .btn{
+        display: inline-block;
+        background-color: var(--bg-accent);
+        padding: 15px;
+        border-radius: 30px;
+        box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+        transition: 300ms;
+    }
+
+    .btn:hover, .nav_list:hover{
+        transform: translateY(3px);
+    }
+
+    .secondary_btn{
+        background-color: transparent;
+        border: 1px solid var(--bg-accent);
+        margin-left: 25px;
+    }
+
+    .home_article span{
+        display: block;
+    }
 
 
 
