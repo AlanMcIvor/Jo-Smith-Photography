@@ -63,10 +63,7 @@ header{
     font-size: 25px;
 }
 
-.nav_link.btn{
-    position: relative;
-    top: -15%
-}
+
 
 
 
@@ -93,35 +90,23 @@ header{
 
 .aside_txt{
     max-width: 450px;
+    font-size: 1.2em;
+    font-weight: var(--fw-regular);
 }
 
 .title{
     font-size: 4.125rem;
+    line-height: 1.2;
+    font-weight: var(--fw-bold);
 }
 
 .home_article span{
     display: block;
 }
 
-.btn_container{
-    display: flex;
-    justify-content: space-between;
-    max-width: 250px;
-}
 
-.btn{
-    display: inline-block;
-    background-color: var(--bg-accent);
-    padding: 0.5rem;
-    border-radius: 20px;
-    box-shadow: rgba(3px 3px 3px, 0.8);
-    font-weight: var(--fw-black);
-    transition: 300ms;
-}
 
-.btn:hover, .social_icons:hover{
-    scale: 1.1;
-}
+
 
 
 
