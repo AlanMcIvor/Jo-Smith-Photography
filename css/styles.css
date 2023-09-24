@@ -59,7 +59,8 @@
         color: var(--primary);
         font-family: 'Oregano', cursive;
         font-size: 2em;
-        font-weight: var(--fw-medium);
+        font-weight: var(--fw-regular);
+        text-align: center;
     }
 
     .logo::after{
@@ -80,6 +81,8 @@
 
     .nav_link{
         font-size: 1.5em;
+        font-weight: var(--fw-regular);
+        letter-spacing: 3px;
     }
 
     .nav_link a:hover{

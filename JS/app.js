@@ -52,6 +52,7 @@ let randomIndex = 0;
 function changeImage() {
     const imagePath = imageFolder + imageFiles[randomIndex];
     const newImage = new Image();
+
     newImage.src = imagePath;
     newImage.onload = () => {
         imageElement.style.opacity = 0;
@@ -63,6 +64,7 @@ function changeImage() {
     // select a random image from teh array
      randomIndex = Math.floor(Math.random() * imageFiles.length);
      console.log(randomIndex)
+     
 }
 
 
@@ -70,4 +72,4 @@ function changeImage() {
 changeImage();
 
 // chnage image every 5 seconds
-setInterval(changeImage, 5000);
+setInterval(changeImage, 8000);
