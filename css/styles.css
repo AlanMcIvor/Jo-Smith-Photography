@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700;6..12,900&family=Oregano&display=swap');
 
 :root{
     --fw-regular: 400;
@@ -6,10 +6,9 @@
     --fw-bold: 700;
     --fw-black: 900;
 
-    --bg-colour: #ccf5ff;
-    --bg-primary: #fe5934;
-    --bg-accent: #ef014c;
-    --ff-color: #e7e7e7;
+    --primary: #fff;
+    --bg-accent: #cc3366;
+    --ff-color: #2b2b2b;
 }
 
 *{
@@ -18,133 +17,112 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: Inter, sans-serif;
-    background-image: url("../images/landscape16.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--ff-color);
+ul{
+    list-style: none;
 }
+
+a{
+    text-decoration: none;
+    color: var(--primary)
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    height: 100dvh;
+    height: 100vh;
+}
+
+
 
 /* header */
 
 header{
-    min-width: 100%;
-    padding: 15px 0;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1.5em;
-    font-weight: var(--fw-medium);
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.3rem;    
+    color: var(--primary)
 }
 
 .logo{
-    font-family: 'Montez', cursive;
-    font-weight: var(--fw-regular);
+    font-family: 'Oregano', cursive;
 }
-
-.navbar{
+.nav_container, .social_container{
     display: flex;
-    align-items: center;
-    width: 650px;
-    justify-content: space-around;
 }
 
-.nav_link{
-    list-style: none;
+.nav_list, .social_list{
+    margin: 0 10px;
+    font-size: 1em;
+    font-weight: var(--fw-black);
+    letter-spacing: 0.8px;
 }
 
-.nav_link a{
-    display: block;
-    text-decoration: none;
-    color: var(--ff-color);
-    transition: 300ms;
+.social_icons{
+    font-size: 25px;
 }
 
-.nav_link a:hover{
-    transform: translateY(1px);
+.nav_link.btn{
+    position: relative;
+    top: -15%
 }
 
-.social_links{
-    display: flex;
-    align-items: center;
-    width: 100px;
-    justify-content: space-around;
 
-}
 
-.social_link{
-    color: var(--ff-color);
-}
 
 /* home main */
 
-.home_main{
-    height: calc(100vh - 67px);
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+.home_body{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('/images/landscape1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
 }
 
-.main_container{
+.home_main{
+    height: calc(100vh - 20%);
+    color: var(--primary);
     display: flex;
-    margin-top: 16rem;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 250px;
+    gap: 100px;
+}
+
+.aside_txt{
+    max-width: 450px;
 }
 
 .title{
-    font-size: 68px;
-    font-weight: var(--fw-bold);
-    margin-bottom: 0.5rem;
+    font-size: 4.125rem;
 }
 
-.sub_title{
-    font-size: 1.5em;
-    font-weight: var(--fw-medium);
-    margin-bottom: 0.5rem;
-}
-
-.intro{
-    font-size: 1em;
-    font-weight: var(--fw-regular);
+.home_article span{
+    display: block;
 }
 
 .btn_container{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-top: 25px;
+    justify-content: space-between;
+    max-width: 250px;
 }
+
 .btn{
-    text-align: center;
-    width: 100px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: var(--ff-color);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    background-color: var(--bg-accent);
+    padding: 0.5rem;
+    border-radius: 20px;
+    box-shadow: rgba(3px 3px 3px, 0.8);
+    font-weight: var(--fw-black);
+    transition: 300ms;
 }
 
-.main_btn{
-    background-color: var(--bg-primary);
-    border-radius: 5px;
+.btn:hover, .social_icons:hover{
+    scale: 1.1;
 }
 
-.secondary_btn{
-    border: 1px solid var(--bg-primary);
-    border-radius: 5px;
-}
-
-.active{
-    border-bottom: 1px solid var(--bg-primary);
-}
 
 
 
