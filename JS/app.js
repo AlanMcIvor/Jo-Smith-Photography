@@ -42,15 +42,11 @@
 //     'wedding19.jpg'
 // ];
 
-let menuBtn = document.querySelector(".hamburger");
-let navbar = document.querySelector(".header");
-let burgerContainer = document.querySelector(".bx");
-let body = document.querySelector("body");
+const menuBtn = document.querySelector(".hamburger");
+const header = document.querySelector(".header")
 
 menuBtn.addEventListener("click", function(){
-    navbar.classList.toggle("showNav");
-    body.classList.toggle("noscroll");
-    burgerContainer.classList.toggle("bx-x");
- 
-    
+    header.classList.toggle("mobile_menu");
+    header.classList.toggle("desktop_menu");
+    header.classList.toggle("active");
 })
