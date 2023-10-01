@@ -68,6 +68,7 @@
     .nav_link:hover{
       transform: translateY(1px);
       color: var(--accent);
+      transition: 300ms;
     }
 
     @media screen and (max-width: 655px){
