@@ -44,9 +44,13 @@
 
 let menuBtn = document.querySelector(".hamburger");
 let navbar = document.querySelector(".navbar");
+let burgerContainer = document.querySelector(".bx");
+let body = document.querySelector("body");
 
 menuBtn.addEventListener("click", function(){
-    navbar.classList.toggle("hide");
-    navbar.classList.toggle("move");
+    navbar.classList.toggle("hidenav");
+    body.classList.toggle("noscroll");
+    burgerContainer.classList.toggle("bx-x");
+ 
     
 })
