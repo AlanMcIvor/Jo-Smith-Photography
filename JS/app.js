@@ -43,12 +43,12 @@
 // ];
 
 let menuBtn = document.querySelector(".hamburger");
-let navbar = document.querySelector(".navbar");
+let navbar = document.querySelector(".header");
 let burgerContainer = document.querySelector(".bx");
 let body = document.querySelector("body");
 
 menuBtn.addEventListener("click", function(){
-    navbar.classList.toggle("hidenav");
+    navbar.classList.toggle("showNav");
     body.classList.toggle("noscroll");
     burgerContainer.classList.toggle("bx-x");
  

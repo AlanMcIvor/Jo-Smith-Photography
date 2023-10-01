@@ -1,14 +1,14 @@
-    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700;6..12,900&family=Oregano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poiret+One&display=swap');
 
     :root{
+        --fw-light: 300;
         --fw-regular: 400;
-        --fw-medium: 500;
-        --fw-bold: 700;
         --fw-black: 900;
-
+        --ff-heading: 'Poiret One', "cursive";
+        --ff-text: 'Montserrat', sans-serif;
         --primary: #fff;
         --backround: #02021a;
-        --accent: #b0d9cf;
+        --accent: #AD9D71;
     }
 
     /* resets */
@@ -20,82 +20,168 @@
     }
 
     ul{
-        list-style: none;
+      list-style: none;
     }
-
+    
     a{
-        display: block;
-        text-decoration: none;
-        transition: 300ms;
-        color: var(--primary);
+      text-decoration: none;
     }
 
-    body{
-        font-family: 'Nunito Sans', sans-serif;
-        height: 100dvh;
-        height: 100vh;
+    /* utility */
+
+    .hide{
+      display: none;
     }
+
 
     .noscroll{
       overflow: hidden;
     }
-
-    img{
-        display: block;
-        max-width: 100%;
-    }
-
     /* header */
 
-  .navbar{
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: 300ms linear;
-  }
+    .header{
+      display: flex;
+      background-color: var(--backround);
+      align-items: center;
+      justify-content: center;
+      font-family: var(--ff-text);
+
+    }
+
+    .header ul{
+      display: flex;
+      padding: 1.2rem;
+
+    }
+
+    .nav_link{
+      color: var(--primary);
+      margin: 0.5rem;
+      font-size: 1.5em;
+      display: block;
+    }
+
+    .nav_link{
+      margin: 0 1.5rem
+    }
+
+    .nav_link:hover{
+      transform: translateY(1px);
+      color: var(--accent);
+    }
+
+    @media screen and (max-width: 655px){
+      .header{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+        opacity: 0.9;
+        transition: 300ms ease-in ;
+      }
+
+      .showNav{
+        transform: translateX(0px);
+      }
+  
+
+      .header ul{
+        flex-direction: column;
+      }
+
+      .nav_link{
+        padding: 3rem 0rem;
+        font-size: 2em;
+        text-align: center;
+      }
 
 
-  .hidenav{
-    transform: translateX(450px);
-  }
+    }
 
-  .hide{
-    display: none;
-  }
+    /* icons */
 
-  .active{
-    border-bottom: 2px solid var(--primary);
-  }
+    .hidden{
+  display: none;
+    }
 
-  .nav_link{
-    font-weight: var(--fw-black);
-    font-size: 1.5em;
-    margin: 25px 0;
-    cursor: pointer;
-    z-index: 100;
-  }
 
-  .hamburger{
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: var(--primary);
-    margin: 1.250rem;
-    cursor: pointer;
-  }
+
+    @media screen and (max-width: 655px){
+      .hamburger{
+        display: block;
+        position: absolute;
+        color: var(--primary);
+        right: 15px;
+        top: 15px;
+        z-index: 999;
+      }
+    }
 
   /* home body */
 
-  .home_body{
-    height: 100vh;
+  .intro{
     background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('/images/wedding18.jpg');
-    background-position: center ;
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('/images/wedding9.jpg');
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    height: calc(100vh - 94px);  /* 100vh minus the height of the nav bar */
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 655px){
+    .intro{
+      height: 100vh;
+    }
+  }
+
+  .intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary);
+  }
+
+  .text_container::before{
+    content: "";
+    width: 450px;
+    height: 2px;
+    background-color: var(--accent);
+    position: absolute;
+    right:50%;
+    transform: translateX(50%);
+    margin-bottom: 1rem;
+  }
+
+  .text_container::after{
+    content: "";
+    width: 450px;
+    height: 2px;
+    background-color: var(--accent);
+    position: absolute;
+    right:50%;
+    transform: translateX(50%);
+    margin: 1rem 0;
+  }
+
+  .title{
+    font-family: var(--ff-heading);
+    font-size: 7em;
+  }
+
+  .sub_title{
+    font-family: var(--ff-text);
+    font-size: 2em;
+  }
+
+  .intro_text_container{
+    margin-top: 2em;
+  }
+
+  .intro_text{
+    font-size: 1.2em;
+    font-family: var(--ff-text);
+    font-weight: var(--fw-light);
   }
