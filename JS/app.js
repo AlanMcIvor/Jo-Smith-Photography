@@ -1,52 +1,10 @@
-// // load a different image every couple of seconds on home page
+  
+//   variables
+  const menuButton = document.querySelector('.menu_btn');
+  const navList = document.querySelector('.nav_list');
 
-// const imageFolder = '/images/' //image folder path
-// const imageFiles = [
-//     // our image names
-//     // landscape images
-//     'landscape1.jpg',
-//     'landscape2.jpg', 
-//     'landscape3.jpg', 
-//     'landscape4.jpg', 
-//     'landscape5.jpg',
-//     'landscape6.jpg',
-//     'landscape7.jpg',
-//     'landscape8.jpg',
-//     'landscape9.jpg',
-//     'landscape10.jpg',
-//     'landscape11.jpg',
-//     'landscape12.jpg',
-//     'landscape13.jpg',
-//     'landscape14.jpg',
-//     'landscape15.jpg',
-//     'landscape16.jpg',
-//     // wedding images
-//     'wedding1.jpg',
-//     'wedding2.jpg',
-//     'wedding3.jpg',
-//     'wedding4.jpg',
-//     'wedding5.jpg',
-//     'wedding6.jpg',
-//     'wedding7.jpg',
-//     'wedding8.jpg',
-//     'wedding9.jpg',
-//     'wedding10.jpg',
-//     'wedding11.jpg',
-//     'wedding12.jpg',
-//     'wedding13.jpg',
-//     'wedding14.jpg',
-//     'wedding15.jpg',
-//     'wedding16.jpg',
-//     'wedding17.jpg',
-//     'wedding18.jpg',
-//     'wedding19.jpg'
-// ];
-
-const menuBtn = document.querySelector(".hamburger");
-const header = document.querySelector(".header")
-
-menuBtn.addEventListener("click", function(){
-    header.classList.toggle("mobile_menu");
-    header.classList.toggle("desktop_menu");
-    header.classList.toggle("active");
-})
+//  event listeners
+  menuButton.addEventListener("click", () => {
+    // when hamburger clicked add or remove the active class
+    navList.classList.toggle("active");
+  } )
