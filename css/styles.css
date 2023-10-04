@@ -299,6 +299,17 @@ flex-direction: column;
   }
 }
 
+@media screen and (max-width: 400px){
+  
+  .about_left h2{
+    font-size: 1.5em;
+  }
+
+  .about_left p{
+    text-align: center;
+  }
+}
+
 /* gallery section */
 
 .gallery_section{
@@ -378,5 +389,11 @@ flex-direction: column;
     top: 75%;
     right: 50%;
     transform: translateX(50%);
+  }
+}
+
+@media screen and (max-width: 350px){
+  .gallery_title{
+    font-size: 1.8em;
   }
 }
