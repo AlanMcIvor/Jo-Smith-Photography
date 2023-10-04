@@ -499,9 +499,8 @@ flex-direction: column;
 /* other services */
 
 .other_services{
-  margin-top: 8rem;
+  margin-top: 5rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
   width: 100%;
@@ -514,6 +513,20 @@ flex-direction: column;
 }
 
 .other_image{
-  width: 700px;
+  max-width: 700px;
   border: 15px solid var(--accent);
+}
+
+@media screen and (max-width: 1550px){
+  
+.other_services{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_container{
+  justify-content: space-around;
+}
+
 }
