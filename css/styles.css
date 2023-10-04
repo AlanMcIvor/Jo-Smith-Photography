@@ -7,7 +7,7 @@
         --ff-heading: 'Poiret One', "cursive";
         --ff-text: 'Montserrat', sans-serif;
         --primary: #eeeded;
-        --backround: #02021a;
+        --backround: #050531;
         --accent: #AD9D71;
     }
 
@@ -44,6 +44,10 @@ img{
 body{
   overflow-x: hidden;
 }
+
+.noScroll{
+  overflow: hidden;
+}
 /* navbar */
 
 .nav_container{
@@ -54,7 +58,7 @@ body{
   align-items: center;
   justify-content: space-between;
   color: var(--primary);
-  padding: 20px 20%;
+  padding: 10px 20%;
   z-index: 999;
 }
 
@@ -96,7 +100,7 @@ body{
 }
 
 /* mobile nav */
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1010px) {
   .nav_list{
     flex-direction: column;
     align-items: center;
