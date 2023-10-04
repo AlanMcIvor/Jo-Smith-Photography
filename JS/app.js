@@ -5,8 +5,9 @@
   const body = document.querySelector('body');
 
 //  event listeners
+
+ // when hamburger clicked add or remove the active class
   menuButton.addEventListener("click", () => {
-    // when hamburger clicked add or remove the active class
     navList.classList.toggle("active");
     body.classList.toggle("noScroll");
   } )
