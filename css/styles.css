@@ -456,6 +456,7 @@ flex-direction: column;
   font-family: var(--ff-heading);
   margin: 0.5em 0;
   position: relative;
+  padding: 5px;
 }
 
 .card_title::before{
@@ -471,6 +472,7 @@ flex-direction: column;
 
 .card_body{
   font-family: var(--ff-text);
+  padding: 5px;
 }
 
 .card_btn{
