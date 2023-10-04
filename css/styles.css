@@ -495,3 +495,25 @@ flex-direction: column;
   transform: translateY(1px);
   background-color: var(--backround);
 }
+
+/* other services */
+
+.other_services{
+  margin-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.other_text{
+  font-size: 1.5em;
+  font-family: var(--ff-text);
+  width: 500px;
+}
+
+.other_image{
+  width: 700px;
+  border: 15px solid var(--accent);
+}
