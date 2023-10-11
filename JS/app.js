@@ -2,7 +2,8 @@
 //   variables
   const menuButton = document.querySelector('.menu_btn');
   const navList = document.querySelector('.nav_list');
-  const body = document.querySelector('body');
+  const body = document.querySelector("body")
+
 
 //  event listeners
 
@@ -11,3 +12,6 @@
     navList.classList.toggle("active");
     body.classList.toggle("noScroll");
   } )
+
+
+  var lightbox = new SimpleLightbox('.gallery a', { /* options */ });

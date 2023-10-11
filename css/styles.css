@@ -327,10 +327,17 @@ flex-direction: column;
 }
 
 .gallery_title{
+  display: block;
   color: var(--primary);
   font-family: var(--ff-text);
   font-size: 4em;
   z-index: 888;
+  transition: 300ms;
+}
+
+.gallery_title:hover{
+  cursor: pointer;
+  font-size: 4.1em;
 }
 
 .gallery_title::before{
@@ -376,6 +383,10 @@ flex-direction: column;
 
   .gallery_title{
     font-size: 3em;
+  }
+
+  .gallery_title:hover{
+    font-size: 3.1em;
   }
 
   .gallery_section{
@@ -456,7 +467,7 @@ flex-direction: column;
   font-family: var(--ff-heading);
   margin: 0.5em 0;
   position: relative;
-  padding: 5px;
+  padding: 0px 10px;
 }
 
 .card_title::before{
@@ -472,7 +483,7 @@ flex-direction: column;
 
 .card_body{
   font-family: var(--ff-text);
-  padding: 5px;
+  padding: 10px;
 }
 
 .card_btn{
@@ -509,7 +520,8 @@ flex-direction: column;
 .other_text{
   font-size: 1.5em;
   font-family: var(--ff-text);
-  width: 500px;
+  max-width: 500px;
+  margin-right: 40px;
 }
 
 .other_image{
@@ -609,3 +621,50 @@ input, textarea{
 }
 
 
+/* map section */
+
+
+iframe{
+  width: 100%;
+}
+
+/* gallerys */
+
+.gallery_container{
+ padding-top: 60px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 20%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
