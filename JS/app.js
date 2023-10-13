@@ -13,5 +13,3 @@
     body.classList.toggle("noScroll");
   } )
 
-
-  var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
