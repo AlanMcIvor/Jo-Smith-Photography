@@ -67,15 +67,6 @@ a{
   font-family: var(--ff-heading);
 }
 
-.logo::after{
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: var(--accent);
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-}
 
 span{
   color: var(--primary);
@@ -85,7 +76,7 @@ span{
 
 .nav_links{
   list-style: none;
-  padding: 15px 35px;
+  padding: 15px 30px;
 }
 
 .nav_links a{
@@ -116,7 +107,7 @@ span{
 
 @media screen and (max-width: 1000px){
   .nav_links{
-    padding: 15px 20px;
+    padding: 15px 15px;
   }
 }
 
@@ -124,9 +115,15 @@ span{
 
   .header{
     min-height: 45px;
-    display: flex;
-    justify-content: center;
+    vertical-align: middle;
   }
+
+  .logo{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  
   .navbar{
     flex-direction: column;
     position: absolute;
@@ -151,4 +148,17 @@ span{
   .hamburger{
     display: block;
   }
+}
+
+/* psuedo elements (the line after the headings and logo) */
+
+
+.logo::after{
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--accent);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
