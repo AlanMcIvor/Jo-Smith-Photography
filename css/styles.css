@@ -63,7 +63,18 @@ a{
 }
 
 .logo{
+  position: relative;
   font-family: var(--ff-heading);
+}
+
+.logo::after{
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--accent);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 span{
