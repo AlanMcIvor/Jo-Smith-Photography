@@ -1,15 +1,6 @@
-  
-//   variables
-  const menuButton = document.querySelector('.menu_btn');
-  const navList = document.querySelector('.nav_list');
-  const body = document.querySelector("body")
+const navbar = document.querySelector(".navbar");
+const burger = document.querySelector(".burger");
 
-
-//  event listeners
-
- // when hamburger clicked add or remove the active class
-  menuButton.addEventListener("click", () => {
-    navList.classList.toggle("active");
-    body.classList.toggle("noScroll");
-  } )
-
+burger.addEventListener("click", function(){
+  navbar.classList.toggle("moveIn");
+})
