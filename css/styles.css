@@ -123,6 +123,7 @@ header ul{
   margin-left: 300px;
   padding-top: 100px;
   background-color: var(--dark);
+  min-height: 100vh;
 }
 .row {
   display: flex;
@@ -132,8 +133,8 @@ header ul{
 
 
 .column {
-  flex: 5%;
-  max-width: 20%;
+  flex: 50%;
+  max-width: 50%;
   padding: 0 4px;
 }
 
@@ -144,7 +145,7 @@ header ul{
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1250px) {
   .column {
     flex: 50%;
     max-width: 50%;
