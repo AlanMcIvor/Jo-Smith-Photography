@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/camera.png">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/filter.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Jo Smith | Photography</title>
 </head>
 <body>
 
     <nav class="sidebar flex">
+
         <h3 class="logo">Jo Smith <br /><span>Photography</span></h3>
 
         <ul class="navbar flex">
@@ -23,8 +26,11 @@
 
     <header class="header flex">
         
-        <button class="show_all">Show All</button>
 
+        <button class="show_all">Show All</button>
+        <div class="burger_container">
+            <i class='bx bx-menu bx-md'></i>
+        </div>
         <ul class="flex">
             <li class="gallery_link"><a href="">Landscape</a></li>
             <li class="gallery_link"><a href="">Wedding</a></li>
@@ -36,48 +42,48 @@
         <div class="gallery_container">
             <div class="row">
                 <div class="column">
-                    <img src="images/landscape1.jpg">
-                    <img src="images/wedding1.jpg">
-                    <img src="images/landscape2.jpg">
-                    <img src="images/wedding2.jpg">
-                    <img src="images/landscape3.jpg">
-                    <img src="images/wedding3.jpg">
-                    <img src="images/landscape4.jpg">
-                    <img src="images/wedding4.jpg">
-                    <img src="images/landscape5.jpg">
-                    <img src="images/wedding5.jpg">
-                    <img src="images/landscape6.jpg">
-                    <img src="images/wedding6.jpg">
-                    <img src="images/landscape7.jpg">
-                    <img src="images/wedding7.jpg">
-                    <img src="images/landscape8.jpg">
-                    <img src="images/wedding8.jpg">
-                    <img src="images/landscape9.jpg">
-                    <img src="images/wedding9.jpg">
-                    <img src="images/landscape10.jpg">
-                    <img src="images/wedding10.jpg">
+                    <img src="images/landscape1.jpg" alt="landscape image">
+                    <img src="images/wedding1.jpg" alt="wedding image">
+                    <img src="images/landscape2.jpg" alt="landscape image">
+                    <img src="images/wedding2.jpg" alt="wedding image">
+                    <img src="images/landscape3.jpg" alt="landscape image">
+                    <img src="images/wedding3.jpg" alt="wedding image">
+                    <img src="images/landscape4.jpg" alt="landscape image">
+                    <img src="images/wedding4.jpg" alt="wedding image">
+                    <img src="images/landscape5.jpg" alt="landscape image">
+                    <img src="images/wedding5.jpg" alt="wedding image">
+                    <img src="images/landscape6.jpg" alt="landscape image">
+                    <img src="images/wedding6.jpg" alt="wedding image">
+                    <img src="images/landscape7.jpg" alt="landscape image">
+                    <img src="images/wedding7.jpg" alt="wedding image">
+                    <img src="images/landscape8.jpg" alt="landscape image">
+                    <img src="images/wedding8.jpg" alt="wedding image">
+                    <img src="images/landscape9.jpg" alt="landscape image">
+                    <img src="images/wedding9.jpg" alt="wedding image">
+                    <img src="images/landscape10.jpg" alt="landscape image">
+                    <img src="images/wedding10.jpg" alt="wedding image">
                     </div>
                 <div class="column">
-                    <img src="images/landscape11.jpg">
-                    <img src="images/wedding11.jpg">
-                    <img src="images/landscape12.jpg">
-                    <img src="images/wedding12.jpg">
-                    <img src="images/landscape13.jpg">
-                    <img src="images/wedding13.jpg">
-                    <img src="images/landscape14.jpg">
-                    <img src="images/wedding14.jpg">
-                    <img src="images/landscape14.jpg">
-                    <img src="images/wedding15.jpg">
-                    <img src="images/landscape15.jpg">
-                    <img src="images/wedding16.jpg">
-                    <img src="images/landscape16.jpg">
-                    <img src="images/wedding17.jpg">
-                    <img src="images/landscape16.jpg">
-                    <img src="images/wedding18.jpg">
-                    <img src="images/landscape1.jpg">
-                    <img src="images/wedding19.jpg">
-                    <img src="images/landscape10.jpg">
-                    <img src="images/wedding10.jpg">
+                    <img src="images/landscape11.jpg" alt="landscape image">
+                    <img src="images/wedding11.jpg" alt="wedding image">
+                    <img src="images/landscape12.jpg" alt="landscape image">
+                    <img src="images/wedding12.jpg" alt="wedding image">
+                    <img src="images/landscape13.jpg" alt="landscape image">
+                    <img src="images/wedding13.jpg" alt="wedding image">
+                    <img src="images/landscape14.jpg" alt="landscape image">
+                    <img src="images/wedding14.jpg" alt="wedding image">
+                    <img src="images/landscape14.jpg" alt="landscape image">
+                    <img src="images/wedding15.jpg" alt="wedding image">
+                    <img src="images/landscape15.jpg" alt="landscape image">
+                    <img src="images/wedding16.jpg" alt="wedding image">
+                    <img src="images/landscape16.jpg" alt="wedding image">
+                    <img src="images/wedding17.jpg" alt="wedding image">
+                    <img src="images/landscape16.jpg" alt="landscape image">
+                    <img src="images/wedding18.jpg" alt="wedding image">
+                    <img src="images/landscape1.jpg" alt="landscape image">
+                    <img src="images/wedding19.jpg" alt="wedding image">
+                    <img src="images/landscape10.jpg" alt="landscape image">
+                    <img src="images/wedding10.jpg" alt="wedding image">
                   </div>
                 </div>
                   
@@ -90,7 +96,9 @@
     
 
    
-    <script src="JS/app.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/app.js"></script>    
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
