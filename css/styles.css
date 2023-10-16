@@ -155,7 +155,7 @@ header ul{
   /* images on home screen fade in from bottom */
   animation: fadeIn linear;
   animation-timeline: view();
-  animation-range: entry 10% cover 30% ;
+  animation-range: entry 5% cover 30% ;
 }
 
 /************************************ hamburger ***************************************************/
@@ -238,6 +238,19 @@ header ul{
   }
 }
 
-@media screen and (max-width: 555px){
+@media screen and (max-width: 500px){
+    .show_all{
+      left: 10px;
+    }
 
+    .filter_container{
+      flex-direction: column;
+      margin: 10px auto;
+    }
+
+    .gallery_link{
+      margin: 5px; 
+      font-weight: var(--fw-light);
+      font-size: 1em;   
+    }
 }
