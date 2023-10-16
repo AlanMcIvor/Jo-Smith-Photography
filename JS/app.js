@@ -1,7 +1,7 @@
 
 // variables
 const sidebar = document.querySelector(".sidebar");
-const burger = document.querySelector(".bx");
+const burger = document.querySelector(".burger");
 
 // event listners
 

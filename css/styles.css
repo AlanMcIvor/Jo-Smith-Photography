@@ -7,7 +7,7 @@
         --ff-heading: 'Poiret One', "cursive";
         --ff-text: 'Montserrat', sans-serif;
         --light: #ffffff;
-        --dark:  #0f1f13;
+        --dark:  #0f1216;
         --primary: #b0d9cf;
         --secondary: #cbdfe6;
         --accent: #4b879b;
@@ -25,11 +25,16 @@
 body{
   font-family: var(--ff-text);
   background-color: var(--dark);
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
 
 /* remove the default styling on lists */
 li{
   list-style: none;
+  position: relative;
 }
 
 /* this makes images easier to work with */
@@ -43,6 +48,37 @@ a{
   text-decoration: none;
   transition: 300ms ease-in-out;
   color: var(--light);
+  position: relative;
+}
+
+p{
+  display: block;
+  line-height: 1.3;
+  margin-bottom: 0.7rem;
+}
+
+/****************** psudeo classes **********************/
+
+.active::before{
+  content: "";
+  background-color: var(--accent);
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  left: -15px;
+  top: 49px;
+}
+
+
+.about_title::after{
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: var(--accent);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 /******************* utility ********************/
@@ -56,8 +92,6 @@ a{
 /**************************** sidebar **************************************/
 
 .logo{
-  position: absolute;
-  top: 10px;
   text-align: center;
   z-index: 1000;
   font-family: var(--ff-heading);
@@ -76,6 +110,7 @@ span{
   background-color: var(--dark);
   color: var(--light);
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .navbar{
@@ -87,7 +122,16 @@ span{
   font-size: 1.3em;
 }
 
-.nav_link a:hover, .gallery_link a:hover, .show_all:hover{
+.social_links{
+  padding-bottom: 15px;
+}
+
+.social_links a{
+  display: block;
+  padding: 0 5px;
+}
+
+.nav_link a:hover, .gallery_link a:hover, .show_all:hover, .social_links a:hover{
   color: var(--accent);
   transform: translateY(1px);
 }
@@ -152,14 +196,15 @@ header ul{
   vertical-align: middle;
   width: 100%;
   cursor: pointer;
-  /* images on home screen fade in from bottom */
+
+  /* images on home screen fade in from bottom  THIS IS AN EXERIMENTAL ATTRIBUTE, not supported on safari, samsung int, operam firefox*/
   animation: fadeIn linear;
   animation-timeline: view();
   animation-range: entry 5% cover 30% ;
 }
 
 /************************************ hamburger ***************************************************/
-.bx{
+.burger{
   position: absolute;
   right: 30px;
   top: 25px;
@@ -184,6 +229,59 @@ header ul{
   }
 }
 
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+/************************about page ******************************************************/
+
+.about{
+  flex-wrap: wrap;
+  margin-left: 300px;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100dvh;
+  min-height: 100dvh;
+  padding: 55px;
+}
+
+.left{
+  max-width: 600px;
+  border: 5px solid var(--accent);
+}
+
+/* make the profile image un-clickable */
+.pro_img{
+  pointer-events: none;
+}
+
+.right{
+  color: var(--light);
+  max-width: 500px;
+}
+
+.about_title{
+  position: relative;
+  font-size: 2em;
+  font-weight: var(--fw-black);
+  font-family: var(--ff-heading);
+}
+
+
+.about_subtitle{
+  font-size: 1.5em;
+  margin: 20px 0;
+  font-weight: var(--fw-regular);
+}
+
+.right p{
+  font-size: 1.2em;
+}
+
 
 /************************************* media queries **************************************************/
 @media screen and (max-width: 1250px) {
@@ -191,6 +289,15 @@ header ul{
     flex: 50%;
     max-width: 50%;
   }
+  .about{
+    text-align: center;
+  }
+
+  .about_title::after{
+    width: 100%;
+  }
+  
+
 }
 
 @media screen and (max-width: 900px) {
@@ -236,6 +343,12 @@ header ul{
     position: absolute;
     left: 100px;
   }
+
+  
+  .about{
+    margin-left: 0px;
+
+}
 }
 
 @media screen and (max-width: 500px){
