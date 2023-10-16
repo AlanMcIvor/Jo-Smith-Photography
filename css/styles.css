@@ -148,6 +148,10 @@ header ul{
   vertical-align: middle;
   width: 100%;
   cursor: pointer;
+  /* images on home screen fade in from bottom */
+  animation: fadeIn linear;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30% ;
 }
 
 /* hamburger */
@@ -162,6 +166,17 @@ header ul{
 
 .burger_container{
   display: none;
+}
+
+/* animations */
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 
