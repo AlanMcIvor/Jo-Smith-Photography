@@ -71,7 +71,9 @@ p{
 }
 
 
-.about_title::after{
+.about_title::after, .services .title::after, .card_title::after{
+  color: var(--light);
+  font-family: var(--ff-heading);
   content: "";
   width: 50%;
   height: 2px;
@@ -81,6 +83,15 @@ p{
   left: 0;
 }
 
+.services .title::after{
+  width: 100%;
+}
+
+.card_title::after{
+  width: 100%;
+}
+
+
 /******************* utility ********************/
 
 .flex{
@@ -89,7 +100,11 @@ p{
   justify-content: center;
 }
 
-/**************************** sidebar **************************************/
+.margin_left{
+  margin-left: 300px;
+}
+
+
 
 .logo{
   text-align: center;
@@ -131,12 +146,12 @@ span{
   padding: 0 5px;
 }
 
-.nav_link a:hover, .gallery_link a:hover, .show_all:hover, .social_links a:hover{
+.nav_link a:hover, .gallery_link a:hover, .show_all:hover, .social_links a:hover, .card_btn:hover{
   color: var(--accent);
   transform: translateY(1px);
 }
 
-/********************************* header *********************************************/
+
 
 .header{
   width: 100%;
@@ -169,11 +184,9 @@ header ul{
   transition: 300ms ease-in;
 }
 
-/********************************* gallery *********************************************/
 
 .gallery_container{
   max-width: calc(100vw - 300px);
-  margin-left: 300px;
   padding-top: 80px;
   background-color: var(--dark);
   min-height: 100vh;
@@ -237,11 +250,9 @@ header ul{
       opacity: 1;
    }
 }
-/************************about page ******************************************************/
 
 .about{
   flex-wrap: wrap;
-  margin-left: 300px;
   align-items: center;
   justify-content: space-around;
   min-height: 100dvh;
@@ -264,15 +275,16 @@ header ul{
   max-width: 500px;
 }
 
-.about_title{
+.about_title, .services .title{
   position: relative;
   font-size: 2em;
   font-weight: var(--fw-black);
   font-family: var(--ff-heading);
+  max-width: 400px;
 }
 
 
-.about_subtitle{
+.about_subtitle, .services .subtitle{
   font-size: 1.5em;
   margin: 20px 0;
   font-weight: var(--fw-regular);
@@ -282,6 +294,73 @@ header ul{
   font-size: 1.2em;
 }
 
+
+.services .title{
+  margin: 25px auto;
+  display: block;
+  position: relative;
+  text-align: center;
+  color: var(--light);
+  font-family: var(--ff-heading);
+}
+
+.services .subtitle{
+  color: var(--light);
+  font-size: 1.2em;
+  font-weight: var(--fw-regular);
+  margin: auto;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card_container{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: calc(100vh - 310px);
+  min-width: 100%;
+}
+
+.card{
+  border: 1px solid var(--secondary);
+  height: 450px;
+  width: 350px;
+  padding: 5px 15px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.card_title{
+  color: var(--light);
+  position: relative;
+  text-align: center;
+}
+
+.card_body{
+  color: var(--light);
+  font-size: 0.8em;
+  margin-top: 25px;
+}
+
+.card_btn{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 15px;
+  font-size: 1em;
+  background-color: transparent;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+  color: var(--light);
+  background-color: var(--secondary);
+}
+
+
+.icon{
+  color: var(--accent);
+  text-align: center;
+  padding: 15px;
+}
 
 /************************************* media queries **************************************************/
 @media screen and (max-width: 1250px) {
@@ -345,7 +424,7 @@ header ul{
   }
 
   
-  .about{
+  .about, .services{
     margin-left: 0px;
 
 }
