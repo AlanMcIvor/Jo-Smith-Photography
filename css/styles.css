@@ -146,12 +146,14 @@ span{
   padding: 0 5px;
 }
 
-.nav_link a:hover, .gallery_link a:hover, .show_all:hover, .social_links a:hover, .card_btn:hover{
+.nav_link a:hover, .gallery_link a:hover, .show_all:hover, .social_links a:hover{
   color: var(--accent);
   transform: translateY(1px);
 }
 
-
+.card_btn:hover{
+  background-color: var(--dark);
+}
 
 .header{
   width: 100%;
@@ -265,8 +267,8 @@ header ul{
   border: 5px solid var(--accent);
 }
 
-/* make the profile image un-clickable */
-.pro_img{
+/* make some images un-clickable */
+.pro_img, .card_img{
   pointer-events: none;
 }
 
@@ -321,24 +323,26 @@ header ul{
 }
 
 .card{
-  border: 1px solid var(--secondary);
   height: 450px;
   width: 350px;
-  padding: 5px 15px;
   position: relative;
   border-radius: 5px;
+  outline: 1px solid var(--accent);
 }
 
 .card_title{
   color: var(--light);
   position: relative;
   text-align: center;
+  padding: 15px;
 }
 
 .card_body{
   color: var(--light);
   font-size: 0.8em;
   margin-top: 25px;
+  padding: 15px;
+  text-align: center;
 }
 
 .card_btn{
@@ -352,14 +356,15 @@ header ul{
   border-radius: 0 0 5px 5px;
   cursor: pointer;
   color: var(--light);
-  background-color: var(--secondary);
+  border: none;
+  background-color: var(--accent);
+  transition: 300ms ease-in;
 }
 
 
-.icon{
-  color: var(--accent);
-  text-align: center;
-  padding: 15px;
+.card_img{
+  width: 100%;
+  border-radius: 5px;
 }
 
 /************************************* media queries **************************************************/
@@ -374,6 +379,10 @@ header ul{
 
   .about_title::after{
     width: 100%;
+  }
+  
+  .card{
+    margin: 45px 0;
   }
   
 
@@ -431,6 +440,21 @@ header ul{
 }
 }
 
+@media  screen and (max-width: 600px) {
+  .services .title{
+    margin: 15px auto;
+    position: absolute;
+    left: 10px;
+  }
+
+  .services .subtitle{
+    display: none;
+}
+
+.card:first-child{
+  margin-top: 100px;
+}
+
 @media screen and (max-width: 500px){
     .show_all{
       left: 10px;
@@ -446,4 +470,5 @@ header ul{
       font-weight: var(--fw-light);
       font-size: 1em;   
     }
+    
 }
