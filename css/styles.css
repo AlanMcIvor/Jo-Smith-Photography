@@ -236,26 +236,7 @@ header ul{
   display: none;
 }
 
-/************************************** animations ***********************************************************/
 
-/* images to fade in */
-@keyframes fadeIn {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-   }
-}
 
 .about{
   flex-wrap: wrap;
@@ -302,7 +283,8 @@ header ul{
 
 
 .services .title{
-  margin: 25px auto;
+  margin: 0 auto;
+  padding: 15px;
   display: block;
   position: relative;
   text-align: center;
@@ -406,16 +388,39 @@ input[type="submit"]{
 }
 
 .contact_title{
-    margin: 25px auto;
-    margin-left: 300px;
-    display: block;
+    margin: auto;
+    padding: 15px 0;
     position: relative;
     text-align: center;
     color: var(--light);
     font-family: var(--ff-heading);
     font-size: 2em;
-    
+    width: 300px;
 }
+
+  .form_container{
+  margin: auto;
+}
+
+  form{
+  min-width: 800px;
+}
+
+  input, label{
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+  .map_container{
+  width: calc(100vw - 320px);
+}
+
+  iframe{
+  width: 100%;
+}
+
+
 
 /************************************* media queries **************************************************/
 @media screen and (max-width: 1250px) {
@@ -433,6 +438,10 @@ input[type="submit"]{
   
   .card{
     margin: 45px 0;
+  }
+
+  form{
+    width: unset
   }
   
 
@@ -524,3 +533,24 @@ input[type="submit"]{
     }
     
   }
+
+  /************************************** animations ***********************************************************/
+
+/* images to fade in */
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}

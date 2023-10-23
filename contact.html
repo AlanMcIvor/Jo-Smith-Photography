@@ -18,9 +18,9 @@
 
         <ul class="navbar flex">
             <li class="nav_link"><a href="index.html">Home</a></li>
-            <li class="nav_link active"><a href="about.html">About</a></li>
+            <li class="nav_link"><a href="about.html">About</a></li>
             <li class="nav_link"><a href="services.html">Services</a></li>
-            <li class="nav_link"><a href="contact.html">Contact</a></li>
+            <li class="nav_link active"><a href="contact.html">Contact</a></li>
         </ul>
 
         <ul class="social_links flex">
@@ -38,28 +38,27 @@
         </div>
     </header>
 
-   <section class="contact_section">
+    <section class="contact margin_left">
 
-    <h3 class="contact_title">Contact</h3>
-        <div class="form_container">
-        <form>
+            <h3 class="contact_title">Contact</h3>
 
-            <fieldset>
-                <legend>Enter your information</legend>
-        
-        
-                <p><label>Name: <input type="text" name="name" size="20" maxlength="40" /></label></p>
-        
-                <p><label>Email: <input type="email" name="email" size="40" maxlength="60"></label></p>
-        
-                    
-                <p class="block"><label class="block">Comments: <br> <textarea name="comments" cols="40" rows="5"></textarea></label></p>
-                <p><input type="submit" name="submit" value="Submit"></p>
-            </fieldset>
-        </form>
-    </div>
-   </section>
+            <article class="form_container">
+                <form>
+                    <fieldset>
+                        <legend>Enter your information</legend>
+                        <label>Name: <input type="text" name="name" maxlength="30" required></label>
+                        <label>Email: <input type="Email" name="name" maxlength="50" required></label>
+                        <label>Comment: <textarea name="comment" id="" cols="30" rows="10"></textarea></label>
+                        <input type="submit" class="btn">
+                    </fieldset>
+                </form>
+            </article>
 
+            <article class="map_container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.1584931570005!2d-2.86711722284941!3d56.46503053690905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865e96e548488d%3A0x652981c5a1436741!2s987%20Brook%20St%2C%20Broughty%20Ferry%2C%20Dundee%20DD5%202EA!5e0!3m2!1sen!2suk!4v1698085318757!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+            
+    </section>
     
 
    
