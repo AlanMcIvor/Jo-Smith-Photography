@@ -216,7 +216,7 @@ header ul{
   width: 100%;
   cursor: pointer;
 
-  /* images on home screen fade in from bottom  THIS IS AN EXERIMENTAL ATTRIBUTE, not supported on safari, samsung int, operam firefox*/
+  /* images on home screen fade in from bottom  animation timeline and animation range ARE EXERIMENTAL ATTRIBUTE, not supported on safari, samsung int, operam firefox t the moment*/
   animation: fadeIn linear;
   animation-timeline: view();
   animation-range: entry 5% cover 30% ;
