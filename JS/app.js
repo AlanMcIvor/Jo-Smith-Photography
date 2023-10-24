@@ -1,15 +1,10 @@
+const hamburger = document.querySelector(".hamburger");
+const navbar = document.querySelector(".navbar");
 
-// variables
-const sidebar = document.querySelector(".sidebar");
-const burger = document.querySelector(".burger");
-
-// event listneres
-
-burger.addEventListener("click", function(){
-    // when burger clicked show/hide nav
- sidebar.classList.toggle("move_in");
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navbar.classList.toggle("active");
 })
-
 
 // jQuery to show images full screen upon click
 $(document).ready(function(){$("img").click(function(){this.requestFullscreen()})});

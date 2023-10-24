@@ -4,107 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/camera.png">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="scripts/filter.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="/images/camera.png">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
     <title>Jo Smith | Photography</title>
 </head>
 <body>
+    
+    <header class="header flex gutter">
+        <h2 class="logo">Jo Smith <br /> <span class="small">Photography</span></h2>
 
-    <nav class="sidebar flex">
-
-        <h3 class="logo">Jo Smith <br /><span>Photography</span></h3>
 
         <ul class="navbar flex">
-            <li class="nav_link active"><a href="index.html">Home</a></li>
-            <li class="nav_link"><a href="about.html">About</a></li>
-            <li class="nav_link"><a href="services.html">Services</a></li>
-            <li class="nav_link"><a href="contact.html">Contact</a></li>
+            <li><a class="nav_link" href="">Home</a></li>
+            <li><a class="nav_link" href="">Gallery</a></li>
+            <li><a class="nav_link" href="">Services</a></li>
+            <li><a class="nav_link" href="">Contact</a></li>
         </ul>
 
-        <ul class="social_links flex">
-            <li><a href=""><i class='bx bxl-facebook bx-md'></i></a></li>
-            <li><a href=""><i class='bx bxl-instagram-alt bx-md' ></i></a></li>
-            <li><a href=""><i class='bx bxl-twitter bx-md' ></i></a></li>
-        </ul>
-    </nav>
-
-    <header class="header flex">
-        
-
-        <button class="show_all">Show All</button>
-        <div class="burger_container">
-            <i class='burger bx bx-menu bx-md'></i>
-        </div>
-        <ul class="flex filter_container">
-            <li class="gallery_link"><a href="">Landscape</a></li>
-            <li class="gallery_link"><a href="">Wedding</a></li>
-        </ul>
+        <il class="social_bar flex">
+            <ul><a class="social_link" href=""><box-icon size="md" type='logo' name='facebook-circle'></box-icon></a></ul>
+            <ul><a class="social_link"href=""><box-icon size="md" name='twitter' type='logo' ></box-icon></a></ul>
+            <ul><a class="social_link"href=""><box-icon size="md" name='instagram' type='logo' ></box-icon></a></ul>
+        </il>
     </header>
 
-    <section class="hero">
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
 
-        <div class="gallery_container margin_left">
-            <div class="row">
-                <div class="column">
-                    <img src="images/landscape1.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding1.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape2.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding2.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape3.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding3.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape4.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding4.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape5.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding5.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape6.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding6.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape7.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding7.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape8.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding8.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape9.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding9.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape10.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding10.jpg" alt="wedding image" loading="lazy">
-                    </div>
-                <div class="column">
-                    <img src="images/landscape11.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding11.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape12.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding12.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape13.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding13.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape14.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding14.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape14.jpg" alt="landscape image">
-                    <img src="images/wedding15.jpg" alt="wedding image">
-                    <img src="images/landscape15.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding16.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape16.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/wedding17.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape16.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding18.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape1.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding19.jpg" alt="wedding image" loading="lazy">
-                    <img src="images/landscape1.jpg" alt="landscape image" loading="lazy">
-                    <img src="images/wedding5.jpg" alt="wedding image" loading="lazy">
-                  </div>
-                </div>
-                  
-                
-            </div>
-        </div>
+    <section class="home flex">
+        <article class="intro" >
+            <h1>Jo Smith <br /> <span class="small">Photography</span></h1>
+            <p>Creating Moments, Capturing Memories</p>
+        </article>
+        <p class="arrow"><box-icon animation="fade-down" size="md" color="white" type='solid' name='down-arrow-circle'></box-icon></p>
+    </section>
 
-    </section> 
-
-    
-
-   
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="JS/app.js"></script>    
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="JS/app.js"></script>
 </body>
 </html>
