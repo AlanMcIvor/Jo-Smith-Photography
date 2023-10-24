@@ -7,7 +7,7 @@
         --ff-heading: 'Poiret One', "cursive";
         --ff-text: 'Montserrat', sans-serif;
         --light: #ffffff;
-        --dark:  #0f1216;
+        --dark:  #000b18;
         --primary: #b0d9cf;
         --secondary: #cbdfe6;
         --accent: #4b879b;
@@ -104,6 +104,23 @@ p{
   margin-left: 300px;
 }
 
+/* hover effects */
+
+.nav_link a:hover, .gallery_link a:hover, .show_all:hover, .social_links a:hover, input[type="submit"]:hover{
+  color: var(--accent);
+  transform: translateY(1px);
+}
+
+input[type="submit"]:hover{
+  color: var(--dark);
+}
+
+.card_btn:hover{
+  background-color: var(--dark);
+}
+
+/* main styles  */
+
 
 
 .logo{
@@ -146,18 +163,6 @@ span{
   padding: 0 5px;
 }
 
-.nav_link a:hover, .gallery_link a:hover, .show_all:hover, .social_links a:hover, input[type="submit"]:hover{
-  color: var(--accent);
-  transform: translateY(1px);
-}
-
-input[type="submit"]:hover{
-  color: var(--dark);
-}
-
-.card_btn:hover{
-  background-color: var(--dark);
-}
 
 .header{
   width: 100%;
@@ -216,7 +221,7 @@ header ul{
   width: 100%;
   cursor: pointer;
 
-  /* images on home screen fade in from bottom  animation timeline and animation range ARE EXERIMENTAL ATTRIBUTE, not supported on safari, samsung int, operam firefox t the moment*/
+  /* images on home screen fade in from bottom  animation timeline and animation range ARE EXERIMENTAL ATTRIBUTE, not supported on safari, samsung int, operam firefox at the moment*/
   animation: fadeIn linear;
   animation-timeline: view();
   animation-range: entry 5% cover 30% ;
