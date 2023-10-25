@@ -68,8 +68,7 @@ a {
 
 .logo {
   font-family: var(--ff-heading);
-  font-size: var(--fs-med);
-  text-align: center;
+  font-size: var(--fs-reg);
 }
 
 .accent {
@@ -80,6 +79,7 @@ a {
   padding-bottom: 0.5em;
   font-size: var(--fs-med);
   z-index: 888;
+  align-items: center;
 }
 
 .nav_link,
@@ -112,7 +112,7 @@ a {
 
 .home {
   background: linear-gradient(0deg, rgba(5, 5, 5, 0.3), rgba(24, 24, 24, 0.3)),
-    url("/images/landscape1.jpg");
+    url("../images/landscape1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -382,14 +382,46 @@ iframe {
 
 .footer {
   background-color: var(--txt-color);
-  min-height: 200px;
 }
 
-.newsletter {
+.newsletter_container {
   background-color: var(--bg-color);
   border-radius: 5px;
   padding: 10px;
 }
+
+.newsletter_title{
+  font-size: var(--fs-med);
+  line-height: 2;
+}
+
+.news_input{
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.footer .container{
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+.social_container_footer{
+  flex-direction: column;
+}
+
+.social_container_footer a{
+  padding: 15px;
+  color: var(--bg-color);
+  align-items: center;
+}
+
+.address{
+  color: var(--bg-color);
+}
+
+
+
 @media screen and (max-width: 990px) {
   .navbar {
     position: fixed;
