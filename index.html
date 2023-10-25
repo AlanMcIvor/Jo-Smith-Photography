@@ -30,7 +30,7 @@
     </div>
 
     <section class="home flex">
-        <article class="intro gutterS" >
+        <article class="intro gutter" >
             <h1>Jo Smith <br /> <span class="accent">Photography</span></h1>
             <p>Creating Moments, Capturing Memories</p>
             <div class="social_container flex">
@@ -43,7 +43,7 @@
     </section>
 
     <section class="gallery gutter">
-        <h2 class="gallery_title">Some of my <span class="accent">work</span></h2>
+        <h2 class="title">Some of my <span class="accent">work</span></h2>
 
         <div class="gallery_container">
             <div>
@@ -160,6 +160,73 @@
 
         </div>
     </section>
+
+    <section class="services">
+
+        <h3 class="title">Services I <span class="accent">offer</span></h3>
+        <div class="card_container flex">
+            <div class="card">
+                <div class="card_icon"><box-icon size="lg" color="#ab2b36" name='camera'></box-icon></div>
+                <h3 class="card_title">Long-term</h3>
+                <div class="card_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus facilis hic non velit enim.</div>
+                <div class="card_btn">Book</div>
+            </div>
+
+            <div class="card">
+                <div class="card_icon"><box-icon size="lg" color="#ab2b36" name='camera' type='solid' ></box-icon></div>
+                <h3 class="card_title">short-term</h3>
+                <div class="card_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur magni porro earum nemo!</div>
+                <div class="card_btn md_btn">Book</div>
+            </div>
+
+            <div class="card">
+                <div class="card_icon"><box-icon size="lg" color="#ab2b36" name='camera'></box-icon></div>
+                <h3 class="card_title">Negotiable</h3>
+                <div class="card_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, praesentium tempore. Repellat, quis quisquam.</div>
+                <div class="card_btn">Book</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact gutter">
+        <h3 class="title">Get in <span class="accent">touch</span></h3>
+
+        <div class="form_container flex">
+            <form>
+                <fieldset>
+                    <legend>Enter your <span class="accent">information</span></legend>
+                        <div class="form_group">
+                            <label for="name" id="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="form_group">
+                            <label for="email" id="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form_group">
+                            <label for="comments" id="comments" name="comments">Comments:</label>
+                            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <input type="submit" class="btn"> 
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="map_container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.158665175115!2d-2.867117222572395!3d56.46502757335624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865e96e548488d%3A0x652981c5a1436741!2s987%20Brook%20St%2C%20Broughty%20Ferry%2C%20Dundee%20DD5%202EA!5e0!3m2!1sen!2suk!4v1698230784712!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
+    <footer class="footer flex">
+        <div class="newsletter">
+            <p class="newsletter_title">Sign up for our weekly newsletter</p>
+            <form>
+                <input class="news_input" type="email" id="email">
+                <input type="submit" name="submit">
+            </form>
+        </div>
+    </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="JS/app.js"></script>
