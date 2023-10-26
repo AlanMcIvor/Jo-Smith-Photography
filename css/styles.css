@@ -63,6 +63,7 @@ a {
 
 .header {
   justify-content: space-between;
+  align-items: center;
   padding: 10px 0;
 }
 
@@ -76,10 +77,8 @@ a {
 }
 
 .navbar {
-  padding-bottom: 0.5em;
   font-size: var(--fs-med);
-  z-index: 888;
-  align-items: center;
+  z-index: 888
 }
 
 .nav_link,
@@ -117,11 +116,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 80vh;
-  top: 0;
+  height: 60vh;
   z-index: -10;
   position: relative;
 }
+
 
 .intro {
   text-align: center;
@@ -191,7 +190,7 @@ a {
 
 .arrow {
   position: absolute;
-  bottom: 200px;
+  bottom: 100px;
   cursor: pointer;
 }
 
