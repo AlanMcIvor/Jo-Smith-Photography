@@ -197,25 +197,30 @@
         <h3 class="title">Get in <span class="accent">touch</span></h3>
 
         <div class="form_container flex">
-            <form>
+            <form class="form">
                 <fieldset>
                     <legend>Enter your <span class="accent">information</span></legend>
                         <div class="form_group">
-                            <label for="name" id="name">Name:</label>
-                            <input type="text" id="name" name="name">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" class="name" value="name" required>
                         </div>
                         <div class="form_group">
-                            <label for="email" id="email">Email:</label>
-                            <input type="email" id="email" name="email">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" class="email" name="email" value="email" required>
                         </div>
                         <div class="form_group">
                             <label for="comments" id="comments" name="comments">Comments:</label>
-                            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                            <textarea name="comments" id="comments" cols="30" rows="10" required></textarea>
                         </div>
 
-                        <input type="submit" class="btn"> 
+                        <input type="submit" class="btn form_btn"> 
                 </fieldset>
             </form>
+
+         <div class="show_info hide">
+            <p>Thank you, <span class="name_output accent"></span></p>
+            <p>We will reply to you at : <span class="email_output accent"></span></p>
+         </div>
         </div>
 
         <div class="map_container">
