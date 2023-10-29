@@ -304,7 +304,8 @@ img {
   min-height: 400px;
   padding: 15px;
   border: 1px solid var(--bg-color);
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .card_icon {
@@ -335,8 +336,6 @@ img {
   color: var(--txt-color);
   font-size: var(--fs-med);
   transition: 300ms ease-in-out;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   outline: none;
   border: none;
 }
