@@ -13,6 +13,13 @@ const form = document.querySelector(".form");
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navbar.classList.toggle("active");
+  let bars = document.querySelectorAll(".bar");
+  bars.forEach(line => {
+    line.classList.toggle("bg_white");
+  })
+
+ 
+
 });
 
 // when wedding button clicked hide all landscape images
