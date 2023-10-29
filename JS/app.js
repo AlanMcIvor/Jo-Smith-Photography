@@ -11,7 +11,6 @@ hamburger.addEventListener("click", () => {
 });
 
 // when wedding button clicked hide all landscape images
-
 wedding_btn.addEventListener("click", (e) => {
   e.preventDefault()
     landscape_img.forEach(img => {
