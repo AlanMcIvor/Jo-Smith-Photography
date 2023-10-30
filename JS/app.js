@@ -46,7 +46,7 @@ landscape_btn.addEventListener("click", (e) => {
 
 })
 
-// when comtact form is submited show info back to user
+// form validation 
 form_btn.addEventListener("click", (e) => {
   e.preventDefault()
   if(!name_input == "" && !email_input == "" && !comment_input == ""){
@@ -60,10 +60,6 @@ form_btn.addEventListener("click", (e) => {
     // if part of the form is empty show an alert
     alert("Please fill in the form");
   }
-// show contact form back to screen
-// name
-
-// email
 
 
 
