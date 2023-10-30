@@ -8,6 +8,11 @@ const landscape_img = document.querySelectorAll(".landscape");
 const form_btn = document.querySelector(".form_btn");
 const show_info = document.querySelector(".show_info");
 const form = document.querySelector(".form");
+const name_input = document.querySelector(".name");
+const email_input = document.querySelector(".email");
+const comment_input = document.querySelector(".comment");
+const name_output = document.querySelector(".name_output");
+const email_output = document.querySelector(".email_output");
 
 // hamburger click event
 hamburger.addEventListener("click", () => {
@@ -44,16 +49,22 @@ landscape_btn.addEventListener("click", (e) => {
 // when comtact form is submited show info back to user
 form_btn.addEventListener("click", (e) => {
   e.preventDefault()
-  show_info.classList.toggle("hide");
-  form.classList.toggle("hide");
+  if(!name_input == "" && !email_input == "" && !comment_input == ""){
+    // show the output div and hide the form
+    show_info.classList.toggle("hide");
+    form.classList.toggle("hide");
+    // show the name and email input in the outout div
+    name_output.innerHTML = name_input.value;
+    email_output.innerHTML = email_input.value;
+  } else{
+    // if part of the form is empty show an alert
+    alert("Please fill in the form");
+  }
 // show contact form back to screen
-  const name = document.querySelector(".name");
-  const name_output = document.querySelector(".name_output");
-  name_output.innerHTML = name.value;
+// name
 
-  const email = document.querySelector(".email");
-  const email_output = document.querySelector(".email_output");
-  email_output.innerHTML = email.value;
+// email
+
 
 
 })
