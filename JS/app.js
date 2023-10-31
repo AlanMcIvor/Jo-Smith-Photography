@@ -49,7 +49,7 @@ landscape_btn.addEventListener("click", (e) => {
 // form validation 
 form_btn.addEventListener("click", (e) => {
   e.preventDefault()
-  if(!name_input == "" && !email_input == "" && !comment_input == ""){
+  if(!name_input.value == "" && !email_input.value == "" && !comment_input.value == ""){
     // show the output div and hide the form
     show_info.classList.toggle("hide");
     form.classList.toggle("hide");
