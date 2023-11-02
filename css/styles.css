@@ -375,13 +375,7 @@ textarea {
   padding: 5px;
 }
 
-input:valid, textarea{
-  border: 1px solid rgb(37, 77, 253);
-}
 
-input:invalid{
- border: 1px solid rgb(255, 130, 155);
-}
 
 
 input[type="submit"] {

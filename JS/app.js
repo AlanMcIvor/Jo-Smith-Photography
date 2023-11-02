@@ -58,7 +58,7 @@ form_btn.addEventListener("click", (e) => {
     email_output.innerHTML = email_input.value;
   } else{
     // if part of the form is empty show an alert
-    alert("Please fill in the form");
+    alert("Please amend in the form");
   }
 
 
