@@ -365,49 +365,84 @@ img {
   padding-bottom: 10px;
 }
 
-fieldset {
-  padding: 25px;
+.filter_container{
+  margin: 25px auto;
 }
 
-input,
-textarea {
+.form_container{
+  margin-bottom: 7em;
+}
+form{
+  width: 90%;
+  max-width: 600px;
+}
+
+fieldset{
+  padding: 35px;
+  border-radius: 5px;
+  color: var(--txt-color);
+}
+
+.form_group{
+  margin-bottom: 30px;
+  position: relative;
+}
+
+input, textarea{
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid var(--txt-color);
+  background: transparent;
+  font-size: 15px;
+  color: var(--txt-color);
 }
 
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+  top: -35px;
+  font-size: 14px;
+}
 
+label{
+  padding: 10px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--txt-color);
+  cursor: text;
+  transition: 300ms ;
+}
 
-
-input[type="submit"] {
-  display: block;
-  padding: 8px;
-  border: 0;
-  background-color: var(--accent-color);
+button{
+  padding: 10px;
   color: var(--bg-color);
+  outline: none;
+  background: var(--accent-color);
+  border: 1px solid var(--txt-color);
+  width: 100%;
   cursor: pointer;
-  transition: 300ms ease-in-out;
-  -webkit-box-shadow: 5px 5px 15px -6px #000000;
-  box-shadow: 5px 5px 15px -6px #000000;
+  
 }
 
-input[type="submit"]:hover {
-  transform: translateY(2px);
+.box-icon{
+  background-color: #fff;
 }
 
-.form_container {
-  margin-bottom: 5em;
-}
-
-form {
-  min-width: 450px;
+.row{
+  display: flex;
   align-items: center;
-  font-size: var(--fs-med);
+  justify-content: space-between;
 }
 
-label {
-  display: block;
-  margin: 5px 0;
+.row .form_group{
+  flex-basis: 48%;
 }
+
+
 
 .show_info{
   font-size: 1.1em;
