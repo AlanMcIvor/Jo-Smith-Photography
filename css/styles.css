@@ -70,7 +70,13 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--bg-color);
+  z-index: 888;
+
 }
 
 .logo {
@@ -102,7 +108,8 @@ a {
 .hamburger {
   display: none;
   cursor: pointer;
-  z-index: 999;
+  z-index: 9999;
+  color: #ab2b36;
 
 }
 
@@ -130,6 +137,7 @@ a {
   height: 60vh;
   z-index: -10;
   position: relative;
+  margin-top: 55px;
 }
 
 
@@ -514,6 +522,10 @@ iframe {
     height: 100vh;
     width: clamp(200px, 60%, 400px);
     transition: 300ms ease-in-out;
+  }
+
+  .navbar.gutter{
+    margin: 0;
   }
 
   .navbar.active {
